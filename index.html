@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciando Download...</title>
+    <title>Baixando Luna TV...</title>
     
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000000; /* Fundo totalmente preto */
+            background-color: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: #e0e0e0; /* Texto claro para leitura */
+            color: #e0e0e0;
         }
         .container {
             text-align: center;
-            background: #0a0e17; /* Fundo da caixa um tom acima do preto */
+            background: #0a0e17;
             padding: 40px;
             border-radius: 10px;
-            border: 2px solid #1f6feb; /* Borda azul */
-            box-shadow: 0 0 20px rgba(31, 111, 235, 0.3); /* Brilho azul ao redor da caixa */
+            border: 2px solid #1f6feb;
+            box-shadow: 0 0 20px rgba(31, 111, 235, 0.3);
             max-width: 450px;
+            width: 90%;
         }
         h2 {
-            color: #58a6ff; /* Azul claro para o título */
+            color: #58a6ff;
             margin-top: 0;
         }
         p {
-            color: #8b949e; /* Cinza para não cansar a vista */
+            color: #8b949e;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .aviso-android {
+            font-size: 0.85em;
+            color: #ff7b72;
             margin-bottom: 25px;
+            border: 1px solid #ff7b72;
+            padding: 10px;
+            border-radius: 6px;
+            background: rgba(255, 123, 114, 0.1);
         }
         a.btn {
             background-color: transparent;
@@ -45,21 +56,20 @@
             transition: all 0.3s ease;
         }
         a.btn:hover {
-            background-color: #1f6feb; /* Fundo azul ao passar o mouse */
+            background-color: #1f6feb;
             color: #ffffff;
             box-shadow: 0 0 10px rgba(31, 111, 235, 0.6);
         }
     </style>
 
     <script>
-        // Função que roda assim que a página carrega
         window.onload = function() {
-            // SUBSTITUA AQUI: O nome ou caminho do arquivo
-            const urlDoArquivo = 'seu-arquivo.zip'; 
+            // COLE AQUI O LINK DIRETO DO SEU APK
+            const urlDoArquivo = 'COLE_O_LINK_AQUI'; 
             
             const link = document.createElement('a');
             link.href = urlDoArquivo;
-            link.download = urlDoArquivo.split('/').pop(); 
+            link.download = 'Luna.TV.apk'; 
             
             document.body.appendChild(link);
             link.click();
@@ -70,11 +80,15 @@
 <body>
 
     <div class="container">
-        <h2>Iniciando Download...</h2>
-        <p>Seu download deve começar automaticamente. Se o seu navegador bloquear, utilize o botão abaixo:</p>
+        <h2>Baixando Luna TV...</h2>
+        <p>O download do aplicativo começará automaticamente. Se o seu navegador bloquear, utilize o botão abaixo.</p>
         
-        <!-- Link de download manual estilizado como botão -->
-        <a href="seu-arquivo.zip" download class="btn">Baixar Manualmente</a>
+        <div class="aviso-android">
+            <strong>Aviso para Android:</strong> Após o download, você pode precisar permitir a instalação de "Fontes Desconhecidas" nas configurações do seu celular.
+        </div>
+        
+        <!-- COLE O LINK AQUI TAMBÉM NO HREF -->
+        <a href="COLE_O_LINK_AQUI" download="Luna.TV.apk" class="btn">Baixar Luna TV Manualmente</a>
     </div>
 
 </body>
