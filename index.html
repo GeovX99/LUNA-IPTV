@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ESSA É A LINHA MÁGICA PARA O DOWNLOADER -->
+    <!-- Ele redireciona automaticamente após 1 segundo (content="1") -->
+    <!-- Troque o link abaixo pelo link de download do seu APK -->
+    <meta http-equiv="refresh" content="1; url=https://geovx99.github.io/LUNA-IPTV/">
+    
     <title>Baixando Luna TV...</title>
     
     <style>
@@ -61,30 +67,19 @@
             box-shadow: 0 0 10px rgba(31, 111, 235, 0.6);
         }
     </style>
-
-    <script>
-        window.onload = function() {
-            // COLE AQUI O LINK DIRETO DO SEU APK
-            const urlDoArquivo = 'COLE_O_LINK_AQUI'; 
-            
-            // Aguarda 1 segundo e redireciona (Compatível com app Downloader)
-            setTimeout(function() {
-                window.location.href = urlDoArquivo;
-            }, 1000);
-        };
-    </script>
 </head>
 <body>
 
     <div class="container">
         <h2>Baixando Luna TV...</h2>
-        <p>O download começará em instantes. Se travar, utilize o botão abaixo.</p>
+        <p>O download começará em instantes. Por favor, aguarde.</p>
         
         <div class="aviso-android">
-            <strong>Aviso:</strong> No app Downloader, basta aguardar a tela de instalação aparecer.
+            <strong>Aviso:</strong> No app Downloader, a tela de instalação aparecerá automaticamente.
         </div>
         
-        <!-- COLE O LINK AQUI TAMBÉM NO HREF (Sem o atributo de download) -->
+        <!-- Caso o redirecionamento falhe, o botão manual está aqui -->
+        <!-- Troque o link abaixo também -->
         <a href="https://geovx99.github.io/LUNA-IPTV/" class="btn">Baixar Luna TV Manualmente</a>
     </div>
 
